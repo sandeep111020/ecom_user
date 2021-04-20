@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register in to get started"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience the all new App!"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/person_24px__1_"
+        android:drawablePadding="2dp"
+        android:drawableStart="@drawable/person_24px__1_"
+        android:hint="Name"
+        android:id="@+id/edttxt_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/email_24px"
+        android:drawablePadding="2dp"
+        android:drawableStart="@drawable/email_24px"
+        android:hint="E_mail Id"
+        android:id="@+id/edttxt_email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/phone_24px"
+        android:drawablePadding="2dp"
+        android:drawableStart="@drawable/phone_24px"
+        android:hint="Mobile Number"
+        android:id="@+id/edttxt_number"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginLeft="15dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/icon_ionic_ios_lock"
+            android:drawablePadding="2dp"
+            android:drawableStart="@drawable/icon_ionic_ios_lock"
+            android:hint="  Password"
+            android:id="@+id/edttxt_password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginLeft="15dp"
+            android:background="#FFFFFF"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/icon_ionic_ios_lock"
+            android:drawablePadding="2dp"
+            android:drawableStart="@drawable/icon_ionic_ios_lock"
+            android:hint="  Confirm Password"
+            android:id="@+id/edttxt_confirm_password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/regbutton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Register"
+
+        android:textSize="24dp"
+        app:backgroundTint="#FF9800" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/login"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
